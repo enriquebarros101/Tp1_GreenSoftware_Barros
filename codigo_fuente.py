@@ -160,7 +160,6 @@ def main(target_seconds: float = 15.0):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Test timed para medir CO2/energía con CodeCarbon")
-    parser.add_argument("--seconds", "-s", type=float, default=10, help="Tiempo objetivo de ejecución (s)")
     args = parser.parse_args()
 
-    main(target_seconds=args.seconds)
+    main(target_seconds=10)
